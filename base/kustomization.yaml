@@ -1,0 +1,7 @@
+namespace: juice-shop
+resources:
+- namespace.yaml
+- deployment.yaml
+- service.yaml
+- ingress.yaml
+- network-policy.yaml

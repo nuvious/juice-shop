@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: juice-shop
+  name: juice-shop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: juice-shop
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: juice-shop
+    spec:
+      containers:
+      - image: bkimminich/juice-shop
+        name: juice-shop
+        resources: {}
+status: {}
